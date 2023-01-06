@@ -10,9 +10,9 @@ public class ConnectionProvider {
          try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/mydb?useSSL=false",
-                    "root",
-                    "mysql1@123");
+                    "",
+                    "",
+                    "");
             return conn;
 
         }catch (ClassNotFoundException | SQLException e){
