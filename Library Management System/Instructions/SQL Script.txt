@@ -1,0 +1,30 @@
+CREATE DATABASE library;
+
+USE library;
+
+CREATE TABLE student (
+  studentID VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  fatherName VARCHAR(255) NOT NULL,
+  courseName VARCHAR(255) NOT NULL,
+  branchName VARCHAR(255) NOT NULL,
+  PRIMARY KEY (studentID)
+);
+
+CREATE TABLE book (
+  bookID VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  publisher VARCHAR(255) NOT NULL,
+  price VARCHAR(255) NOT NULL,
+  publishingYear VARCHAR(255) NOT NULL,
+  PRIMARY KEY (bookID)
+);
+
+CREATE TABLE issue (
+  bookID VARCHAR(255) NOT NULL,
+  studentID VARCHAR(255) NOT NULL,
+  issueDate VARCHAR(255) NOT NULL,
+  dueDate VARCHAR(255) NOT NULL,
+  returnBook VARCHAR(255) NOT NULL,
+  PRIMARY KEY (bookID, studentID)
+);

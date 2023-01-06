@@ -1,0 +1,21 @@
+> You've got 2 Option to use the Database
+	1. Cloud based database
+	2. Local Database
+> To use the cloud based database, buy or get a free database from
+somewhere and add the information of database in the ConnectionProvider
+class present in the "Project" folder of "src" accordingly.
+> To use Local Database, install XAMPP. To install zamp, follow the
+provided link. 
+> https://www.apachefriends.org/
+> And to connect XAMPP with the database, you need to start Apache 
+and MySQL in the XAMPP Control Panel which will eventually be installed
+with XAMPP.
+> To setup the Database for the provided LibraryManagementSystemPro
+program, copy the SQL Script from provided "SQL Script" txt file,
+and run it in the PhpMyAdmin of your Database, simply by going to
+the SQL tab, paste the code, and click "Go".
+> If you're using Cloud Based Database, then your Database provider
+must have provided the link to PhpMyAdmin.
+> But if you're using Local Database of your IP, then you can simply
+open your PhpMyAdmin by searching Local Host.
+http://localhost/phpmyadmin/
